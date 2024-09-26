@@ -540,10 +540,12 @@ main.main{
     margin-top: 42px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 51px;
 }
 .about__image{
     width: 100%;
+    max-width: 606px;
     display: flex;
     align-items: center;
     border-radius: 50px;
