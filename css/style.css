@@ -1100,6 +1100,12 @@ main.main{
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 479px) {
+    .about-page__box{
+        margin-top: 30px;
+        gap: 40px;
+    }
+}
 .summary{
     margin-top: 100px;
 }
@@ -1143,6 +1149,9 @@ main.main{
 @media (max-width: 479px) {
     .summary{
         margin-top: 60px;
+    }
+    .summary ul{
+        margin-top: 30px;
     }
 }
 .banner-image{
