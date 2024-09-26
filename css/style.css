@@ -592,6 +592,7 @@ main.main{
 .diet__inner{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 23px;
 }
 .diet__image{
@@ -600,6 +601,7 @@ main.main{
     align-items: center;
     border-radius: 50px;
     overflow: hidden;
+    max-width: 606px;
 }
 .diet__image img{
     width: 100%;
