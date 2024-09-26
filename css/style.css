@@ -353,7 +353,7 @@ main.main{
         inset: 0;
         top: 100px;
         overflow: auto;
-        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);;
         background-color: #0F0F0F;
         max-width: 100%;
         padding: 50px;
@@ -402,7 +402,7 @@ main.main{
     z-index: -1;
 }
 .hero__inner{
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);;
     min-height: 720px;
     display: flex;
     align-items: center;
@@ -1070,7 +1070,7 @@ main.main{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);;
 }
 .about-page__image img{
     width: 100%;
@@ -1185,7 +1185,7 @@ main.main{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 100vh;
+    max-height: calc(var(--vh, 1vh) * 100);;
 }
 .article__banner img{
     width: 100%;
