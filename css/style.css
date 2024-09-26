@@ -584,6 +584,10 @@ main.main{
     }
 }
 @media (max-width: 479px) {
+    .about__content{
+        margin-top: 30px;
+        gap: 40px;
+    }
     .about__image{
         border-radius: 25px;
     }
@@ -641,7 +645,7 @@ main.main{
         border-radius: 25px;
     }
     .diet__content{
-        margin-top: 40px;
+        margin-top: 30px;
     }
 }
 .plan{
@@ -860,7 +864,7 @@ main.main{
         margin-top: 60px;
     }
     .faq__block{
-        margin-top: 40px;
+        margin-top: 30px;
         gap: 20px;
     }
     .faq__item{
