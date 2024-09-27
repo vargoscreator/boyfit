@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body"> 
@@ -43,6 +44,11 @@
                             <a class="header__link" href="#feedback">Контакты</a>
                         </li>
                     </ul>
+                    <div class="header__lang">
+                        <a class="header__lang-item" href="#">ENG</a>
+                        <a class="header__lang-item active" href="#">Rus</a>
+                        <a class="header__lang-item" href="#">ita</a>
+                    </div>
                 </nav>
 
                 <div class="header__lang">
@@ -62,21 +68,29 @@
 
     <main class="main">
         <section class="article">
-            <div class="article__banner">
-                <img src="img/article/home-5.webp" alt="">
+            <div class="article__banner" data-aos="fade-right">
+                <img src="img/article/home-5.jpg" alt="">
             </div>
             <div class="container">
-                <div class="article__inner">
+                <div class="article__inner" data-aos="fade-up">
                     <h1 class="article__title title">BFR-тренировка</h1>
                     <p>Тренировка с ограничением кровотока, известная как BFR-T или BFR, является инновационным методом тренировки, который заключается в частичном ограничении кровотока с помощью внешнего сжимающего устройства. Когда манжета надувается, происходит постепенное механическое сжатие сосудов под манжетой, что приводит к частичному ограничению артериального кровотока в дистальных структурах манжеты и, в большей степени, к ограничению венозного оттока. Этот метод успешно используется как в спортивной сфере, так и в реабилитации благодаря его доказанной эффективности в плане увеличения силы и мышечной гипертрофии.</p>
                     <p>С помощью BFR клиенты могут получать пользу от выполнения упражнений с низкой нагрузкой (20-30% от 1RM), достигая тех же результатов, что и при тренировках высокой интенсивности с нагрузками в 75-80%, но без излишнего напряжения на сухожилия и суставы. Это может быть полезно, например, для пациентов после операций или с высокой болевой реакцией, которые не могут переносить более высокие нагрузки из-за травм или проблем с суставами в коленях или спине. </p>
-                    <p class="banner__title">the best version of yourself</p>
+                    <div class="banner__content-title">
+                        <div class="banner__content-container">
+                            <p class="banner__title">the best version of yourself</p>
+                            <p class="banner__title">the best version of yourself</p>
+                            <p class="banner__title">the best version of yourself</p>
+                            <p class="banner__title">the best version of yourself</p>
+                            <p class="banner__title">the best version of yourself</p>
+                        </div>
+                    </div>
                     <p>Для безопасного использования BFR его должен выполнять квалифицированный и сертифицированный персонал. С помощью BFR можно разработать индивидуальный протокол, включив его в повседневную тренировочную программу для повышения результатов, улучшения композиции тела, увеличения силы и получения многочисленных системных преимуществ этого инновационного протокола.</p>
                 </div>
             </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" data-aos="fade-up">
             <span id="feedback"></span>
             <div class="container">
                 <div class="feedback__inner">
@@ -118,25 +132,25 @@
             <div class="container">
                 <div class="partners__inner">
                     <div class="partners__item">
-                        <img src="img/partners/1.webp" alt="">
+                        <img src="img/partners/1.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/2.webp" alt="">
+                        <img src="img/partners/2.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/3.webp" alt="">
+                        <img src="img/partners/3.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/4.webp" alt="">
+                        <img src="img/partners/4.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/5.webp" alt="">
+                        <img src="img/partners/5.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/6.webp" alt="">
+                        <img src="img/partners/6.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/7.webp" alt="">
+                        <img src="img/partners/7.png" alt="">
                     </div>
                 </div>
             </div>
@@ -152,6 +166,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

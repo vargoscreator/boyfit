@@ -1,3 +1,4 @@
+AOS.init({once: true});
 document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', () => {
         const header = document.querySelector('.header');

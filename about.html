@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body"> 
@@ -43,6 +44,11 @@
                             <a class="header__link" href="#feedback">Контакты</a>
                         </li>
                     </ul>
+                    <div class="header__lang">
+                        <a class="header__lang-item" href="#">ENG</a>
+                        <a class="header__lang-item active" href="#">Rus</a>
+                        <a class="header__lang-item" href="#">ita</a>
+                    </div>
                 </nav>
 
                 <div class="header__lang">
@@ -63,10 +69,10 @@
     <main class="main">
         <section class="about-page">
             <div class="about-page__image">
-                <img src="img/article/home-1.webp" alt="">
+                <img src="img/article/home-1.jpg" alt="" data-aos="fade-right">
             </div>
             <div class="container">
-                <div class="about-page__inner">
+                <div class="about-page__inner" data-aos="fade-up">
                     <div class="about-page__content">
                         <h1 class="about-page__title title">Обо мне</h1>
                         <div class="about-page__box">
@@ -83,11 +89,19 @@
                         </div>
                     </div>
                 </div>
-                <p class="banner__title">the best version of yourself</p>
+                <div class="banner__content-title">
+                    <div class="banner__content-container">
+                        <p class="banner__title">the best version of yourself</p>
+                        <p class="banner__title">the best version of yourself</p>
+                        <p class="banner__title">the best version of yourself</p>
+                        <p class="banner__title">the best version of yourself</p>
+                        <p class="banner__title">the best version of yourself</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="summary">
+        <section class="summary" data-aos="fade-up">
             <div class="container">
                 <div class="summary__inner">
                     <h2 class="summary__title title">Краткое изложение моего образовательного пути</h2>
@@ -112,16 +126,16 @@
             </div>
         </section>
 
-        <section class="banner-image">
+        <section class="banner-image" data-aos="fade-up">
             <div class="container">
                 <div class="banner-image__inner">
                     <p class="banner-image__name section__name">The B.o.y. Fit</p>
-                    <img src="img/article/home-1-1.webp" alt="">
+                    <img src="img/article/home-1-1.jpg" alt="">
                 </div>
             </div>
         </section>
 
-        <section class="summary">
+        <section class="summary" data-aos="fade-up">
             <div class="container">
                 <div class="summary__inner">
                     <h2 class="summary__title title">Успешно пройденные семинары:</h2>
@@ -153,7 +167,7 @@
             </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" data-aos="fade-up">
             <span id="feedback"></span>
             <div class="container">
                 <div class="feedback__inner">
@@ -195,25 +209,25 @@
             <div class="container">
                 <div class="partners__inner">
                     <div class="partners__item">
-                        <img src="img/partners/1.webp" alt="">
+                        <img src="img/partners/1.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/2.webp" alt="">
+                        <img src="img/partners/2.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/3.webp" alt="">
+                        <img src="img/partners/3.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/4.webp" alt="">
+                        <img src="img/partners/4.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/5.webp" alt="">
+                        <img src="img/partners/5.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/6.webp" alt="">
+                        <img src="img/partners/6.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/7.webp" alt="">
+                        <img src="img/partners/7.png" alt="">
                     </div>
                 </div>
             </div>
@@ -229,6 +243,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body"> 
@@ -43,6 +44,11 @@
                             <a class="header__link" href="#feedback">Контакты</a>
                         </li>
                     </ul>
+                    <div class="header__lang">
+                        <a class="header__lang-item" href="#">ENG</a>
+                        <a class="header__lang-item active" href="#">Rus</a>
+                        <a class="header__lang-item" href="#">ita</a>
+                    </div>
                 </nav>
 
                 <div class="header__lang">
@@ -62,22 +68,30 @@
 
     <main class="main">
         <section class="article">
-            <div class="article__banner">
-                <img src="img/article/home-4.webp" alt="">
+            <div class="article__banner" data-aos="fade-right">
+                <img src="img/article/home-4.jpg" alt="">
             </div>
             <div class="container">
-                <div class="article__inner">
+                <div class="article__inner" data-aos="fade-up">
                     <h1 class="article__title title">Перекомпановка тела</h1>
                     <p>Если вы стремитесь трансформировать свое тело, основной целью может стать рекомпозиция тела. Этот процесс включает в себя уменьшение жировой массы и увеличение мышечной массы с целью достижения более подтянутой, определенной и здоровой физической формы. Однако рекомпозиция тела требует времени, настойчивости и тщательно спланированной стратегии. Именно здесь вступает в игру важность сопровождения компетентным персональным тренером.</p>
                     <p>Вместе мы сможем создать персонализированную программу тренировок, учитывающую ваши потребности, цели и текущий уровень физической подготовки. Эта программа не только проведет вас через разнообразные эффективные упражнения для увеличения мышечной массы и сжигания жира, но и обеспечит правильное выполнение упражнений для максимизации результатов и предотвращения травм</p>
-                    <p class="banner__title">the best version of yourself</p>
+                    <div class="banner__content-title">
+                        <div class="banner__content-container">
+                            <p class="banner__title">the best version of yourself</p>
+                            <p class="banner__title">the best version of yourself</p>
+                            <p class="banner__title">the best version of yourself</p>
+                            <p class="banner__title">the best version of yourself</p>
+                            <p class="banner__title">the best version of yourself</p>
+                        </div>
+                    </div>
                     <p>Помимо тренировок, я позабочусь о том, чтобы предоставить вам поддержку и консультации по питанию. Диета в таких случаях играет ключевую роль в рекомпозиции тела. Я смогу помочь вам разработать сбалансированный план питания, соответствующий вашим конкретным потребностям. Это может включать планирование приемов пищи, контроль калорийности и управление порциями для оптимизации потери жира и набора мышечной массы.</p>
                     <p>Сопровождение персональным тренером на 360° необходимо для достижения ваших целей по рекомпозиции тела эффективно и безопасно. Благодаря моей поддержке и руководству вы сможете уверенно следовать программе тренировок и диете, преодолевать препятствия на пути и достигать ощутимых результатов в более короткие сроки. С правильным планом и поддержкой вы сможете трансформировать свое тело и достичь наилучшей физической формы, соответствующей вашим возможностям.</p>
                 </div>
             </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" data-aos="fade-up">
             <span id="feedback"></span>
             <div class="container">
                 <div class="feedback__inner">
@@ -119,25 +133,25 @@
             <div class="container">
                 <div class="partners__inner">
                     <div class="partners__item">
-                        <img src="img/partners/1.webp" alt="">
+                        <img src="img/partners/1.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/2.webp" alt="">
+                        <img src="img/partners/2.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/3.webp" alt="">
+                        <img src="img/partners/3.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/4.webp" alt="">
+                        <img src="img/partners/4.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/5.webp" alt="">
+                        <img src="img/partners/5.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/6.webp" alt="">
+                        <img src="img/partners/6.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/7.webp" alt="">
+                        <img src="img/partners/7.png" alt="">
                     </div>
                 </div>
             </div>
@@ -153,6 +167,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

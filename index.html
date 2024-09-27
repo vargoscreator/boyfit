@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body"> 
@@ -43,6 +44,11 @@
                             <a class="header__link" href="#feedback">Контакты</a>
                         </li>
                     </ul>
+                    <div class="header__lang">
+                        <a class="header__lang-item" href="#">ENG</a>
+                        <a class="header__lang-item active" href="#">Rus</a>
+                        <a class="header__lang-item" href="#">ita</a>
+                    </div>
                 </nav>
 
                 <div class="header__lang">
@@ -64,9 +70,9 @@
         <section class="hero">
             <div class="container">
                 <div class="hero__inner">
-                    <h1 class="hero__title">Be the best version of yourself <br>than someone else’s bad copy</h1>
-                    <div class="hero__image">
-                        <img src="img/hero.webp" alt="hero">
+                    <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">Be the best version of yourself <br>than someone else’s bad copy</h1>
+                    <div class="hero__image" data-aos="fade-up" data-aos-delay="0">
+                        <img src="img/hero.png" alt="hero">
                     </div>
                     <div class="hero__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -78,7 +84,7 @@
             </div>
         </section>
 
-        <section class="program">
+        <section class="program" data-aos="fade-up">
             <div class="container">
                 <div class="program__inner">
                     <h2 class="program__title title">Создадим персонализированную программу тренировок для вас</h2>
@@ -112,14 +118,14 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" data-aos="fade-up">
             <span id="about"></span>
             <div class="container">
                 <div class="about__inner">
                     <h2 class="about__title title">Про меня</h2>
                     <div class="about__content">
                         <div class="about__image">
-                            <img src="img/about.webp" alt="about">
+                            <img src="img/about.jpg" alt="about">
                         </div>
                         <div class="about__block">
                             <p class="about__name">Здравствуйте! </p>
@@ -135,11 +141,19 @@
                         </div>
                     </div>
                 </div>
-                <p class="banner__title">the best version of yourself</p>
+                <div class="banner__content-title">
+                    <div class="banner__content-container">
+                        <p class="banner__title">the best version of yourself</p>
+                        <p class="banner__title">the best version of yourself</p>
+                        <p class="banner__title">the best version of yourself</p>
+                        <p class="banner__title">the best version of yourself</p>
+                        <p class="banner__title">the best version of yourself</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="diet">
+        <section class="diet" data-aos="fade-up">
             <div class="container">
                 <div class="diet__inner">
                     <div class="diet__block">
@@ -150,13 +164,13 @@
                         </div>
                     </div>
                     <div class="diet__image">
-                        <img src="img/diet.webp" alt="diet">
+                        <img src="img/diet.jpg" alt="diet">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="plan">
+        <section class="plan" data-aos="fade-up">
             <div class="container">
                 <div class="plan__inner">
                     <p class="plan__name section__name">The B.o.y. Fit</p>
@@ -173,82 +187,90 @@
             </div>
         </section>
 
-        <section class="blog">
+        <section class="blog" data-aos="fade-up">
             <span id="blog"></span>
             <div class="container">
                 <div class="blog__inner">
                     <div class="blog__block">
                         <div class="blog__item">
                             <a class="blog__item-image" href="workouts-more-50.html">
-                                <img src="img/blog/1.webp" alt="">
+                                <img src="img/blog/1.jpg" alt="">
                             </a>
                             <div class="blog__item-content">
-                                <div class="blog__item-top">
+                                <a class="blog__item-top" href="workouts-more-50.html">
                                     <h3>Тренировки 50+</h3>
-                                    <a class="blog__item-icon" href="workouts-more-50.html">
+                                    <div class="blog__item-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                                             <path d="M5.98699 16.1818L14.6188 7.54994L14.6247 10.4545L16.2727 10.4545L16.2727 4.72721L10.5454 4.72721L10.5454 6.37526L13.45 6.38111L4.81816 15.0129L5.98699 16.1818Z" fill="#F17D09"/>
                                         </svg>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                                 <p>Мобильность, сила, баланс, координация, адаптация, прогресс, безопасность, здоровье.</p>
                             </div>
                         </div>
                         <div class="blog__item">
                             <a class="blog__item-image" href="womens-training.html">
-                                <img src="img/blog/2.webp" alt="">
+                                <img src="img/blog/2.jpg" alt="">
                             </a>
                             <div class="blog__item-content">
-                                <div class="blog__item-top">
-                                    <h3>Женская тренировка</h3>
-                                    <a class="blog__item-icon" href="womens-training.html">
+                                <a class="blog__item-top" href="womens-training.html">
+                                    <h3>Женская тренировка</h3>                              
+                                    <div class="blog__item-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                                             <path d="M5.98699 16.1818L14.6188 7.54994L14.6247 10.4545L16.2727 10.4545L16.2727 4.72721L10.5454 4.72721L10.5454 6.37526L13.45 6.38111L4.81816 15.0129L5.98699 16.1818Z" fill="#F17D09"/>
                                         </svg>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                                 <p>Сила, гибкость, тонус, расширение возможностей. уверенность, выносливость, жизненная сила, хорошее самочувствие.</p>
                             </div>
                         </div>
                         <div class="blog__item">
                             <a class="blog__item-image" href="rearrangement-of-the-body.html">
-                                <img src="img/blog/3.webp" alt="">
+                                <img src="img/blog/3.jpg" alt="">
                             </a>
                             <div class="blog__item-content">
-                                <div class="blog__item-top">
+                                <a class="blog__item-top" href="rearrangement-of-the-body.html">
                                     <h3>Перекомпановка тела</h3>
-                                    <a class="blog__item-icon" href="rearrangement-of-the-body.html">
+                                    <div class="blog__item-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                                             <path d="M5.98699 16.1818L14.6188 7.54994L14.6247 10.4545L16.2727 10.4545L16.2727 4.72721L10.5454 4.72721L10.5454 6.37526L13.45 6.38111L4.81816 15.0129L5.98699 16.1818Z" fill="#F17D09"/>
                                         </svg>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                                 <p>Потеря жира, набор мышечной массы, трансформация, фитнес, внешний вид, сила, баланс.</p>
                             </div>
                         </div>
                         <div class="blog__item">
                             <a class="blog__item-image" href="BFR-training.html">
-                                <img src="img/blog/4.webp" alt="">
+                                <img src="img/blog/4.jpg" alt="">
                             </a>
                             <div class="blog__item-content">
-                                <div class="blog__item-top">
-                                    <h3>BFR-тренировка</h3>
-                                    <a class="blog__item-icon" href="BFR-training.html">
+                                <a class="blog__item-top" href="BFR-training.html">
+                                    <h3>BFR-тренировка</h3>                               
+                                    <div class="blog__item-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                                             <path d="M5.98699 16.1818L14.6188 7.54994L14.6247 10.4545L16.2727 10.4545L16.2727 4.72721L10.5454 4.72721L10.5454 6.37526L13.45 6.38111L4.81816 15.0129L5.98699 16.1818Z" fill="#F17D09"/>
                                         </svg>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                                 <p>Мышечная масса, улучшение силы, <br>инновации, рельеф, восстановление <br>мышц.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p class="banner__title">the best version of yourself</p>
+                <div class="banner__content-title">
+                    <div class="banner__content-container">
+                        <p class="banner__title">the best version of yourself</p>
+                        <p class="banner__title">the best version of yourself</p>
+                        <p class="banner__title">the best version of yourself</p>
+                        <p class="banner__title">the best version of yourself</p>
+                        <p class="banner__title">the best version of yourself</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="faq">
+        <section class="faq" data-aos="fade-up">
             <div class="container">
                 <div class="faq__inner">
                     <h2 class="faq__title title">Часто задаваемые вопросы</h2>
@@ -298,7 +320,7 @@
             </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" data-aos="fade-up">
             <span id="feedback"></span>
             <div class="container">
                 <div class="feedback__inner">
@@ -340,25 +362,25 @@
             <div class="container">
                 <div class="partners__inner">
                     <div class="partners__item">
-                        <img src="img/partners/1.webp" alt="">
+                        <img src="img/partners/1.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/2.webp" alt="">
+                        <img src="img/partners/2.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/3.webp" alt="">
+                        <img src="img/partners/3.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/4.webp" alt="">
+                        <img src="img/partners/4.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/5.webp" alt="">
+                        <img src="img/partners/5.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/6.webp" alt="">
+                        <img src="img/partners/6.png" alt="">
                     </div>
                     <div class="partners__item">
-                        <img src="img/partners/7.webp" alt="">
+                        <img src="img/partners/7.png" alt="">
                     </div>
                 </div>
             </div>
@@ -374,7 +396,8 @@
             </div>
         </div>
     </footer>
-
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
 </body>
